@@ -1,0 +1,102 @@
+{
+  "planets": [
+    {
+      "name": "sun",
+      "size": 85,
+      "distance": 0,
+      "planet_texture_name": "sun.jpg",
+      "rings": false,
+      "ring_texture_name": null,
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    },
+    {
+      "name": "mercury",
+      "size": 1.5,
+      "distance": 100,
+      "planet_texture_name": "mercury.jpg",
+      "rings": false,
+      "ring_texture_name": null,
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    },
+    {
+      "name": "venus",
+      "size": 4.5,
+      "distance": 60,
+      "planet_texture_name": "venus.jpg",
+      "rings": false,
+      "ring_texture_name": null,
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    },
+    {
+      "name": "earth",
+      "size": 5,
+      "distance": 80,
+      "planet_texture_name": "earth.jpg",
+      "rings": false,
+      "ring_texture_name": null,
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    },
+    {
+      "name": "mars",
+      "size": 3.2,
+      "distance": 92,
+      "planet_texture_name": "mars.jpg",
+      "rings": false,
+      "ring_texture_name": null,
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    },
+    {
+      "name": "jupiter",
+      "size": 26,
+      "distance": 125,
+      "planet_texture_name": "jupiter.jpg",
+      "rings": true,
+      "ringInternalSize": 126,
+      "ringExternalSize": 128,
+      "ring_texture_name": "jupiter_ring.png",
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    },
+    {
+      "name": "saturn",
+      "size": 20,
+      "distance": 152,
+      "planet_texture_name": "saturn.jpg",
+      "rings": true,
+      "ring_texture_name": "saturn_ring.png",
+      "ringInternalSize": 154,
+      "ringExternalSize": 159,
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    },
+    {
+      "name": "uranus",
+      "size": 11,
+      "distance": 210,
+      "planet_texture_name": "uranus.jpg",
+      "rings": true,
+      "ring_texture_name": "uranus_ring.jpg",
+      "ringInternalSize": 212,
+      "ringExternalSize": 214,
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    },
+    {
+      "name": "neptune",
+      "size": 10,
+      "distance": 242,
+      "planet_texture_name": "neptune.jpg",
+      "rings": true,
+      "ring_texture_name": "neptune_ring.png",
+      "ringInternalSize": 245,
+      "ringExternalSize": 247.5,
+      "rotationSpeed": 0,
+      "revolutionSpeed": 0
+    }
+  ]
+}
