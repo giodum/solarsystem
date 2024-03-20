@@ -34,7 +34,7 @@ export default class SolarSystem {
     // setting up background of the solar system
     const cubeTextureLoader = new THREE.CubeTextureLoader()
     this.scene.background = cubeTextureLoader
-      .setPath('/src/textures/')
+      .setPath('/textures/')
       .load([
         'stars.jpg',
         'stars.jpg',
@@ -70,10 +70,10 @@ export default class SolarSystem {
       this.planets[planet.name] = this.createPlanet(
         planet.name,
         this.planetGeometry,
-        '/src/textures/' + planet.planet_texture_name,
+        '/textures/' + planet.planet_texture_name,
         planet.size,
         planet.distance,
-        planet.rings ? '/src/textures/' + planet.ring_texture_name : null,
+        planet.rings ? '/textures/' + planet.ring_texture_name : null,
         planet.ringInternalSize,
         planet.ringExternalSize,
         planet.rotationSpeed,
@@ -115,19 +115,10 @@ export default class SolarSystem {
   }
 
   animate() {
-    // console.log(this.planets)
-    // this.mercury.planetObject.rotateY(0.01)
-    // this.mercury.planet.rotateY(0.001)
-    // this.sun.planetObject.rotateY(0.002)
-
     Object.values(this.planets).forEach((planet) => {
       planet.planet.rotateY((planet.rotationSpeed / 100) * 1.5)
       planet.planetObject.rotateY((1 / planet.revolutionSpeed) * 3)
     })
-
-    // this.planets.forEach((planet) => {
-    //   planet.planet.rotateY(planet.rotationSpeed / 100)
-    // })
 
     this.renderer.render(this.scene, this.camera)
     requestAnimationFrame(() => this.animate())
