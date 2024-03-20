@@ -62,7 +62,7 @@ export default class SolarSystem {
     this.scene.add(this.pointLight)
 
     // create shared planet geometry
-    this.planetGeometry = new THREE.SphereGeometry(1, 30, 30)
+    this.planetGeometry = new THREE.SphereGeometry(1, 50, 50)
 
     // create planets
     this.planets = []

@@ -49,10 +49,16 @@ export default class Planet {
         emissiveIntensity: 1,
         emissiveMap: this.textureLoader.load(this.texture),
         map: this.textureLoader.load(this.texture),
+        normalMap: this.textureLoader.load(
+          '/textures/' + this.name + '_normal.jpg'
+        ),
       })
     } else {
       material = new THREE.MeshStandardMaterial({
         map: this.textureLoader.load(this.texture),
+        normalMap: this.textureLoader.load(
+          '/textures/' + this.name + '_normal.jpg'
+        ),
       })
     }
 
